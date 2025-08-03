@@ -1,0 +1,72 @@
+.splash {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+    position: relative;
+    z-index: 10;
+    background: rgb(0, 0, 0);
+    color: white;
+    gap: 3rem;
+
+    .logo__section{
+        display: inline-block;
+        padding-left: 80px;
+        .logo{
+            fill: white;
+            height: 300px;
+            width: 450px;
+        }
+        span{
+            display: inline-block;
+            &.logo__category{
+                font-size: 2.5rem;
+                h4{
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+    .logo__name{
+        h1{
+            font-size:4rem;
+            font-weight: 600;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            
+        }
+    }
+    .loading__text{
+        font-family: "Montserrat", sans-serif;
+        h2{
+            font-size: 2rem;
+            font-weight: 300;
+            display: flex;
+            gap: .5rem;
+
+            ol{
+                list-style: none;
+                height: 2.8rem;
+                overflow: hidden;
+                li{
+                    animation: slide-up 2s ease forwards;
+                    animation-delay: 2s;
+                }
+            }
+        }
+    }
+}
+
+@keyframes slide-up {
+    0% {
+    transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
