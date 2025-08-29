@@ -14,9 +14,9 @@ export default function LoadingScreen ({animateUp}:{animateUp: boolean}) {
                     key="splash"
                     className={styles.splash}
                     initial={{ opacity: 1 }}
-                    exit={{ opacity: 0, y: -100, transition: { duration: 0.8 } }}
+                    exit={{ opacity: 0, transition: { duration: 0.8 } }}
                 >
-                <div className={styles.logo__section}>
+                <motion.div className={styles.logo__section} layoutId="logo">
                     <Image src={Logo} alt="rexon logo" className={styles.logo} />
 
                     <motion.span
@@ -28,7 +28,7 @@ export default function LoadingScreen ({animateUp}:{animateUp: boolean}) {
                     >
                     <h4>Dev.</h4>
                     </motion.span>
-                </div>
+                </motion.div>
 
                 <motion.div 
                     className={styles.logo__name}

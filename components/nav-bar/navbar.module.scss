@@ -1,0 +1,43 @@
+.nav{
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    &__container{
+        width: 85%;
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px 20px 50px;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0);
+        border-radius: 45px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.64);
+    }
+    &__links{
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 1.3rem;
+        }
+    }
+    &__logo{
+        display: inline-block;
+        .logo{
+            height: 50px;
+            width: 80px;
+        }
+        .nav__category{
+            display: inline-block;
+            margin-top: auto;
+            h4{
+                font-weight: 200;
+            }
+        }
+    }
+}
